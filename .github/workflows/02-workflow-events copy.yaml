@@ -1,0 +1,14 @@
+name: 02 - Eventos Copy
+on: 
+  push:
+  workflow_dispatch:
+jobs:
+  echo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: ShowTrigger
+        run: |
+         echo Event name eventos copy: ${{ github.event_name }}
+
+
+           
