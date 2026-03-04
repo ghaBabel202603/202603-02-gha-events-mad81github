@@ -1,9 +1,6 @@
-name: 02 - Eventos
+name: 02 - Eventos Copy
 on: 
   push:
-  pull_request:
-  schedule:
-     - cron: "26 15 * * *"
   workflow_dispatch:
 jobs:
   echo:
@@ -11,7 +8,7 @@ jobs:
     steps:
       - name: ShowTrigger
         run: |
-         echo Event name test: ${{ github.event_name }}
+         echo Event name eventos copy: ${{ github.event_name }}
 
 
            
