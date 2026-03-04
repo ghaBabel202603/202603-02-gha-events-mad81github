@@ -11,7 +11,7 @@ jobs:
     steps:
       - name: ShowTrigger
         run: |
-         echo Event name: ${{ github.event_name }}
+         echo Event name test: ${{ github.event_name }}
 
 
            
